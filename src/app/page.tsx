@@ -83,7 +83,7 @@ export default function Home() {
 
       <Grid container spacing={4} justifyContent="center" alignItems="flex-start">
         {/* Completed Tricks Column */}
-        <Grid xs={12} md={3}>
+        <Grid size={{ xs: 12, md: 3 }}>
           <Box sx={{ border: '1px solid #ccc', borderRadius: '8px', p: 2, minHeight: 300, textAlign: 'left' }}>
             <Typography variant="h5" gutterBottom>
               Completed Shots
@@ -103,7 +103,7 @@ export default function Home() {
         </Grid>
 
         {/* Spinner and Controls Column */}
-        <Grid xs={12} md={6} sx={{ position: 'relative' }}> {/* Added relative positioning for arrow */}
+        <Grid size={{ xs: 12, md: 6 }} sx={{ position: 'relative' }}> {/* Added relative positioning for arrow */}
           <Spinner tricks={availableTricks} spinning={spinning} result={result} spinDuration={spinDuration} finalRotation={finalRotation} />
 
           {/* Static Arrow Indicator */}
@@ -151,7 +151,7 @@ export default function Home() {
         </Grid>
 
         {/* Available Tricks Column */}
-        <Grid xs={12} md={3}>
+        <Grid size={{ xs: 12, md: 3 }}>
           <Box sx={{ border: '1px solid #ccc', borderRadius: '8px', p: 2, minHeight: 300, textAlign: 'left' }}>
             <Typography variant="h5" gutterBottom>
               Available Shots
